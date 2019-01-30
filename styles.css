@@ -1,0 +1,149 @@
+
+@media (max-width:760px) {
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  /* ヘッダー */
+  .header {
+    width: 100%;
+  }
+  .header-bg {
+    width: 100%;
+    height: 200px;
+    background: url('./images/background.jpeg') no-repeat;
+    background-size: cover;
+  }
+  .header-mask {
+    height: 100%;
+    background: rgba(255, 255, 255, .4);
+  }
+  .me {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    border: 3px solid rgba(74, 165, 231, 0.83);
+  }
+  .catch {
+    margin: 0;
+    padding-top: 6rem;
+    padding-left: 9rem;
+    font-family: 'Noto Serif SC', serif;
+    color: rgba(211, 240, 242, 0.93);
+    text-shadow: 4px 4px 4px #aaa;
+  }
+  #menu {
+    position: fixed;
+    top: 75%;
+    left: 75%;
+    opacity: .5;
+    font-size: 2.4rem;
+    z-index: 2;
+  }
+  #fontSize-btn {
+    font-size: 2.4rem;
+    position: fixed;
+    top: 65%;
+    left: 75%;
+    color: #eee;
+  }
+  #plus-btn {
+    background-color: rgb(209, 108, 51);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: -50%;
+  }
+  #minus-btn {
+    background-color: rgb(73, 171, 226);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: -50%;
+  }
+  .nav {
+    margin: 0;
+    position: fixed;
+    bottom: 10%;
+    width: 80%;
+    transform: translateX(250%);
+    transition: .5s;
+  }
+  .active {
+    transform: translateX(40%);
+  }
+  .nav li {
+    height: 4rem;
+  }
+  /* ヘッダー終わり */
+
+
+  /* セクション */
+  .section {
+    text-align: center;
+    margin: 40px auto;
+  }
+  .section-title {
+    font-family: 'Sawarabi Mincho', sans-serif;
+    font-weight: 600;
+    padding-top: 15px;
+    text-shadow: 2px 2px 2px rgb(228, 228, 228);
+  }
+  .section-content {
+    margin: 0 30px;
+    line-height: 1.8;
+    font-family: 'Noto Serif SC', serif;
+  }
+
+  .work {
+    width: 100%;
+    height: 220px;
+    margin: 16px auto;
+  }
+
+
+
+
+  .contact {
+    background: rgb(99, 144, 141);
+  }
+  .contact-icon {
+    padding: 16px;
+    margin: 16px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+
+
+
+  /* フッター */
+  .footer {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .facebook {
+    color: #3C5A99;
+  }
+  .twitter {
+    color: #1DA1F2;
+  }
+  .linkedin {
+    color: #0077B5;
+  }
+
+}
