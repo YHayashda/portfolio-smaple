@@ -8,10 +8,12 @@
 
   ul {
     list-style: none;
+    background-color: rgba(0, 0, 0, .7);
   }
 
   a {
     text-decoration: none;
+    color: #fff;
   }
 
   /* ヘッダー */
@@ -89,6 +91,7 @@
   }
   .nav li {
     height: 4rem;
+    line-height: 1.5;
   }
   /* ヘッダー終わり */
 
