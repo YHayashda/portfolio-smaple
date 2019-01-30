@@ -5,9 +5,9 @@ $(document).ready(function() {
     $(this).toggleClass('fa-times');
   });
   $("#plus-btn").click(function() {
-    $("body").css('font-size', '+=8');
+    $("body").css('font-size', '+=4');
   });
   $("#minus-btn").click(function() {
-    $("body").css('font-size', '-=8');
+    $("body").css('font-size', '-=4');
   });
 });
