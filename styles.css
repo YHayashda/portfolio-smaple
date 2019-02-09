@@ -1,53 +1,172 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+/* ヘッダー */
+.header-bg {
+  width: 100%;
+  height: 600px;
+  background: url('./images/background.jpeg') no-repeat;
+  background-size: cover;
+}
+.header-mask {
+  height: 100%;
+  background: rgba(255, 255, 255, .4);
+}
+.me {
+  width: 200px;
+  height: 210px;
+  border-radius: 50%;
+  position: absolute;
+  top: 140px;
+  left: 140px;
+  border: 3px solid rgba(74, 165, 231, 0.83);
+}
+.nav {
+  position: fixed;
+  right: 0;
+  margin: 0 auto;
+  list-style: none;
+  background-color: rgba(128, 135, 140, .7);
+  text-align: right;
+}
+li {
+  display: inline-block;
+  margin: 10px 20px;
 
+}
+.catch {
+  margin: 0;
+  position: absolute;
+  top: 240px;
+  left: 480px;
+  font-size: 1.5rem;
+  font-family: 'Noto Serif SC', serif;
+  letter-spacing: 10px;
+  color: rgba(211, 240, 242, 0.93);
+  text-shadow: 4px 4px 4px #aaa;
+}
+#menu {
+  display: none;
+}
+
+#fontSize-btn {
+  display:none;
+}
+
+
+/* メイン */
+.section {
+  text-align: center;
+  padding: 100px 0;
+}
+.section-title {
+  font-size: 2.4rem;
+  font-family: 'Sawarabi Mincho', sans-serif;
+  font-weight: 600;
+  text-shadow: 2px 2px 2px rgb(228, 228, 228);
+  margin-top: 0;
+}
+
+.about-content, .education-content, .experience-content {
+  width: 75%;
+  margin: 0 auto;
+  line-height: 2;
+}
+.experience-content {
+  width: 65%;
+}
+
+
+.work {
+  margin: 10px;
+}
+
+.contact {
+  background: rgb(99, 144, 141);
+}
+.contact-icon {
+  padding: 20px;
+  margin: 30px;
+  font-size: 2rem;
+  background-color: #eee;
+  border-radius: 50%;
+}
+.instagram {
+  color: #d93177;
+}
+.twitter {
+  color: #1DA1F2;
+}
+.linkedin {
+  color: #0077B5;
+}
+
+.footer {
+  margin: 0 auto;
+  height: 30px;
+  background-color: rgb(143, 144, 144);
+}
+.footer > p {
+  margin: 0 auto;
+  height: 100%;
+  color: white;
+  text-align: center;
+}
+
+
+/* スクロールイベント */
+.about {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 1s;
+}
+
+
+
+/* スマホ */
 @media (max-width:760px) {
-  body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
   ul {
     list-style: none;
     background-color: rgba(0, 0, 0, .7);
   }
-
-  a {
-    text-decoration: none;
-    color: #fff;
-  }
-
   /* ヘッダー */
   .header {
     width: 100%;
   }
   .header-bg {
     width: 100%;
-    height: 200px;
+    height: 350px;
     background: url('./images/background.jpeg') no-repeat;
     background-size: cover;
   }
-  .header-mask {
-    height: 100%;
-    background: rgba(255, 255, 255, .4);
-  }
   .me {
-    width: 80px;
-    height: 80px;
+    width: 160px;
+    height: 160px;
     border-radius: 50%;
     position: absolute;
-    top: 30px;
-    left: 20px;
+    top: 350px;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
     border: 3px solid rgba(74, 165, 231, 0.83);
   }
   .catch {
-    margin: 0;
-    padding-top: 6rem;
-    padding-left: 9rem;
+    width: 100%;
+    text-align: center;
+    top: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.6rem;
     font-family: 'Noto Serif SC', serif;
     color: rgba(211, 240, 242, 0.93);
     text-shadow: 4px 4px 4px #aaa;
   }
   #menu {
+    display: block;
     position: fixed;
     top: 75%;
     left: 75%;
@@ -56,6 +175,7 @@
     z-index: 2;
   }
   #fontSize-btn {
+    display: block;
     font-size: 2.4rem;
     position: fixed;
     top: 65%;
@@ -85,11 +205,13 @@
     width: 80%;
     transform: translateX(250%);
     transition: .5s;
+    text-align: left;
   }
   .active {
     transform: translateX(40%);
   }
   .nav li {
+    display: block;
     height: 4rem;
     line-height: 1.5;
   }
@@ -108,15 +230,16 @@
     text-shadow: 2px 2px 2px rgb(228, 228, 228);
   }
   .section-content {
-    margin: 0 30px;
     line-height: 1.8;
     font-family: 'Noto Serif SC', serif;
   }
-
   .work {
     width: 100%;
     height: 220px;
     margin: 16px auto;
+  }
+  .contact {
+    margin-bottom: 0;
   }
 
 
@@ -131,6 +254,15 @@
     background-color: #eee;
     border-radius: 50%;
   }
+  .instagram {
+    color: ##d93177;
+  }
+  .twitter {
+    color: #1DA1F2;
+  }
+  .linkedin {
+    color: #0077B5;
+  }
 
 
 
@@ -139,14 +271,6 @@
     text-align: center;
     margin: 0 auto;
   }
-  .facebook {
-    color: #3C5A99;
-  }
-  .twitter {
-    color: #1DA1F2;
-  }
-  .linkedin {
-    color: #0077B5;
-  }
+
 
 }
