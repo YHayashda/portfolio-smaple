@@ -39,6 +39,7 @@ img {
   color: blue;
   font-weight: bold;
   text-align: right;
+  z-index: 5;
 }
 li {
   display: inline-block;
